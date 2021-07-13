@@ -1,0 +1,10 @@
+<h1>this is the index</h1>
+<div>
+  <% @tasks.each do |task| %>
+    <ul>
+      <li> <%= link_to  task.title, task_path(task) %> <%= link_to  "Delete", task_path(task),method: :delete,data: { confirm: "Are you sure?" } %> </li>
+    </ul>
+  <% end %>
+</div>
+<p>------------------------------------------------------------------------------------</p>
+<p><%= link_to  "Add+", new_task_path %></p>

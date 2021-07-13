@@ -1,0 +1,8 @@
+<h1>this is the show</h1>
+<div>
+  <h2><%= @task.id %>. <%= @task.title %> </h2>
+  <li><%= @task.details %>, completed: [<%= @task.completed %>]</li>
+  <p><%= link_to  "Edit", edit_task_path %></p>
+</div>
+<p><%= link_to  "Return to Home", root_path %></p>
+  
